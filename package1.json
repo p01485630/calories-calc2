@@ -1,0 +1,21 @@
+{
+  "name": "calories-calc",
+  "version": "1.0.0",
+  "description": "熱量計算機 - Vue 應用程式",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.5"
+  },
+  "keywords": ["vue", "calories", "calculator", "health"],
+  "author": "",
+  "license": "MIT"
+}

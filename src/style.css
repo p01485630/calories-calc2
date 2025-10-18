@@ -1,0 +1,129 @@
+/* 全域樣式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #2d3748;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 全域按鈕樣式 */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* 全域輸入框樣式 */
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* 全域連結樣式 */
+a {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #764ba2;
+}
+
+/* 全域標題樣式 */
+h1, h2, h3, h4, h5, h6 {
+  color: #2d3748;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* 全域段落樣式 */
+p {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .header h1 {
+    font-size: 2rem !important;
+  }
+  
+  .main {
+    padding: 0 0.5rem;
+  }
+  
+  .calculator {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+  
+  .header h1 {
+    font-size: 1.6rem !important;
+  }
+  
+  .header p {
+    font-size: 1rem !important;
+  }
+}
+
+/* 動畫效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-section {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* 滾動條樣式 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a6fd8;
+}
